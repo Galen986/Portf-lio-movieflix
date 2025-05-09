@@ -1,6 +1,6 @@
-<script>
 const translations = {
     pt: {
+        "page-title": "Movieflix",
         "footer-languages": "Idiomas:",
         "lang-pt": "Português",
         "lang-en": "Inglês",
@@ -25,6 +25,7 @@ const translations = {
         "footer-copyright": "© 2025 Movieflix. Todos os direitos reservados."
     },
     en: {
+        "page-title": "Movieflix",
         "footer-languages": "Languages:",
         "lang-pt": "Portuguese",
         "lang-en": "English",
@@ -55,6 +56,7 @@ function updateTexts(lang) {
         const key = el.getAttribute('data-i18n');
         if (translations[lang][key]) el.textContent = translations[lang][key];
     });
+    document.title = translations[lang]["page-title"];
 }
 
 document.getElementById('lang-select').addEventListener('change', function() {
@@ -64,4 +66,3 @@ document.getElementById('lang-select').addEventListener('change', function() {
 document.addEventListener('DOMContentLoaded', function() {
     updateTexts(document.getElementById('lang-select').value);
 });
-</script>
