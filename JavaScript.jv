@@ -1,53 +1,21 @@
 
-// Dicionário de traduções
 const translations = {
     pt: {
+        "footer-languages": "Idiomas:",
+        "lang-pt": "Português",
+        "lang-en": "Inglês",
         "main-title": "O Melhor Streaming Que Você Pode Ter Com Filmes, Séries e Documentários",
-        "button-year": "Assine Por R$ 17,90/Ano*",
-        "button-month": "Assine Por R$ 22,90/Mês*",
-        "price-note": "* O preço pode variar caso a assinatura seja feita em outros planos.",
-        "watch-your-way-title": "Assista Do Seu Jeito",
-        "watch-your-way-desc": "Aproveite a tela grande da sua TV ou assista no tablet, laptops, smartphones ou em outros aparelhos. Nossa seleção de filmes e séries não para de crescer.",
-        "catalog-desc": "O Movieflix oferece um catálogo imenso de filmes, séries e documentários e transmissão ao vivo.",
-        "button-subscribe": "Assine já",
-        "download-title": "Baixe filmes, séries e documentários",
-        "download-desc": "Baixe e assista como quiser e onde quiser. Assim seus favoritos estão sempre com você, até mesmo sem internet.",
-        "devices-title": "Disponível nos seus dispositivos favoritos",
-        "footer-languages": "Idiomas",
-        "footer-howto": "Formas de assistir",
-        "footer-faq": "Perguntas frequentes",
-        "footer-exclusive": "Só na Movieflix",
-        "footer-terms": "Termos de uso",
-        "footer-copyright": "© 2025 Movieflix. Todos os direitos reservados.",
-        "devices-tvs": "TVs",
-        "devices-smartphones": "Smartphones",
-        "devices-computers": "Computadores"
+        // ...adicione outras chaves e traduções aqui
     },
     en: {
+        "footer-languages": "Languages:",
+        "lang-pt": "Portuguese",
+        "lang-en": "English",
         "main-title": "The Best Streaming You Can Have with Movies, Series and Documentaries",
-        "button-year": "Subscribe for $17.90/Year*",
-        "button-month": "Subscribe for $22.90/Month*",
-        "price-note": "* The price may vary if the subscription is made on other plans.",
-        "watch-your-way-title": "Watch Your Way",
-        "watch-your-way-desc": "Enjoy the big screen on your TV or watch on tablet, laptops, smartphones, or other devices. Our selection of movies and series is always growing.",
-        "catalog-desc": "Movieflix offers a huge catalog of movies, series, documentaries and live streaming.",
-        "button-subscribe": "Subscribe now",
-        "download-title": "Download movies, series and documentaries",
-        "download-desc": "Download and watch whenever and wherever you want. Your favorites are always with you, even without internet.",
-        "devices-title": "Available on your favorite devices",
-        "footer-languages": "Languages",
-        "footer-howto": "Ways to watch",
-        "footer-faq": "Frequently Asked Questions",
-        "footer-exclusive": "Only on Movieflix",
-        "footer-terms": "Terms of use",
-        "footer-copyright": "© 2025 Movieflix. All rights reserved.",
-        "devices-tvs": "TVs",
-        "devices-smartphones": "Smartphones",
-        "devices-computers": "Computers"
+        // ...adicione outras chaves e traduções aqui
     }
 };
 
-// Função para atualizar os textos
 function updateTexts(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
@@ -55,12 +23,10 @@ function updateTexts(lang) {
     });
 }
 
-// Listener para o seletor de idioma
 document.getElementById('lang-select').addEventListener('change', function() {
     updateTexts(this.value);
 });
 
-// Atualiza ao carregar a página
 document.addEventListener('DOMContentLoaded', function() {
     updateTexts(document.getElementById('lang-select').value);
 });
