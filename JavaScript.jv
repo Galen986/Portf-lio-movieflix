@@ -1,18 +1,52 @@
-
+<script>
 const translations = {
     pt: {
         "footer-languages": "Idiomas:",
         "lang-pt": "Português",
         "lang-en": "Inglês",
         "main-title": "O Melhor Streaming Que Você Pode Ter Com Filmes, Séries e Documentários",
-        // ...adicione outras chaves e traduções aqui
+        "subscribe-year": "Assine Por R$ 17,90/Ano*",
+        "subscribe-month": "Assine Por R$ 22,90/Mês*",
+        "price-note": "* O preço pode variar caso a assinatura seja feita em outros planos.",
+        "watch-your-way-title": "Assista Do Seu Jeito",
+        "watch-your-way-desc": "Aproveite a tela grande da sua TV ou assista no tablet, laptops, smartphones ou em outros aparelhos. Nossa seleção de filmes e séries não para de crescer.",
+        "catalog-desc": "O movieflix oferece um cátalogo imenso de filmes,séries e documentarios e transmissão ao vivo",
+        "subscribe-now": "Assine já",
+        "download-title": "Baixe filmes,séries e documentarios",
+        "download-desc": "Baixe e assista como quiser e onde quiser.Assim seus favoritos estão sepre com você,até mesmo sem intenet",
+        "devices-title": "Dispótivos nos seus dispositivos favoritos",
+        "devices-tvs": "TVs",
+        "devices-smartphones": "Smartphones",
+        "devices-computers": "Computadores",
+        "footer-howto": "Formas de assistir",
+        "footer-faq": "Perguntas frequentes",
+        "footer-exclusive": "Só na movieflix",
+        "footer-terms": "Termos de uso",
+        "footer-copyright": "© 2025 Movieflix. Todos os direitos reservados."
     },
     en: {
         "footer-languages": "Languages:",
         "lang-pt": "Portuguese",
         "lang-en": "English",
         "main-title": "The Best Streaming You Can Have with Movies, Series and Documentaries",
-        // ...adicione outras chaves e traduções aqui
+        "subscribe-year": "Subscribe for $17.90/Year*",
+        "subscribe-month": "Subscribe for $22.90/Month*",
+        "price-note": "* The price may vary if the subscription is made on other plans.",
+        "watch-your-way-title": "Watch Your Way",
+        "watch-your-way-desc": "Enjoy the big screen on your TV or watch on tablet, laptops, smartphones, or other devices. Our selection of movies and series keeps growing.",
+        "catalog-desc": "Movieflix offers a huge catalog of movies, series, documentaries and live streaming",
+        "subscribe-now": "Subscribe now",
+        "download-title": "Download movies, series and documentaries",
+        "download-desc": "Download and watch whenever and wherever you want. Your favorites are always with you, even without internet",
+        "devices-title": "Available on your favorite devices",
+        "devices-tvs": "TVs",
+        "devices-smartphones": "Smartphones",
+        "devices-computers": "Computers",
+        "footer-howto": "Ways to watch",
+        "footer-faq": "Frequently Asked Questions",
+        "footer-exclusive": "Only on Movieflix",
+        "footer-terms": "Terms of use",
+        "footer-copyright": "© 2025 Movieflix. All rights reserved."
     }
 };
 
@@ -30,3 +64,4 @@ document.getElementById('lang-select').addEventListener('change', function() {
 document.addEventListener('DOMContentLoaded', function() {
     updateTexts(document.getElementById('lang-select').value);
 });
+</script>
