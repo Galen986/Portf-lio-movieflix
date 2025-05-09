@@ -43,7 +43,7 @@
         <section class="dispositivos">
            <h1 class="dispositivos-titulo" data-i18n="devices-title">Dispótivos nos seus dispositivos favoritos</h1>
            <ul class="dispositivos-lista">
-                <li><img src="./imagens/tv.png" alt="TV"><h3 class="lista-item" data-i18n="devices-tvs">TVs</h3></li>
+                <li><img src="./imagens/tv.png" alt="TV"><h3 class">TVs</h3></li>
                 <li><img src="./imagens/celular.png" alt="Celular"><h3 class="lista-item" data-i18n="devices-smartphones">Smartphones</h3></li>
                 <li><img src="./imagens/computador.png" alt="Notebook"><h3 class="lista-item" data-i18n="devices-computers">Computadores</h3></li>
             </ul>
@@ -52,7 +52,6 @@
             <img class="footer-imagem" src="./imagens/movieflix.png" alt="Logo do Movieflix" width="180px">
             <ul class="footer-lista">
                 <li class="lista-link">
-                    <!-- Seletor de idiomas AQUI -->
                     <label for="lang-select" style="cursor:pointer;" data-i18n="footer-languages">Idiomas:</label>
                     <select id="lang-select" style="margin-left:4px;">
                         <option value="pt" data-i18n="lang-pt">Português</option>
@@ -132,12 +131,14 @@ function updateTexts(lang) {
     document.title = translations[lang]["page-title"];
 }
 
-document.getElementById('lang-select').addEventListener('change', function() {
-    updateTexts(this.value);
-});
-
 document.addEventListener('DOMContentLoaded', function() {
+    // Força o idioma padrão como português
     updateTexts(document.getElementById('lang-select').value);
+
+    // Troca ao selecionar novo idioma
+    document.getElementById('lang-select').addEventListener('change', function() {
+        updateTexts(this.value);
+    });
 });
 </script>
 </body>
